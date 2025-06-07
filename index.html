@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RM dex</title>
+    <title>R&M Dex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            portal: '#00FFB2',
+            rickBlue: '#00B0FF',
+            mortyYellow: '#FFD600',
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.6s ease-out',
+            'pulse-slow': 'pulse 3s infinite',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen text-white font-sans">
+    <header class="bg-black/70 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-gray-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+            <div class="">
+                <img src="assets/rmlogo.svg" alt="logo" class="h-8" />
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-portal">
+                R&M Dex
+            </h1>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 font-semibold text-gray-300">
+            <a href="#features" class="hover:text-portal transition-colors">Recursos</a>
+            <a href="#how-it-works" class="hover:text-portal transition-colors">Como Funciona</a>
+            <a href="/home/index.html" class="hover:text-portal transition-colors">Entrar</a>
+            </nav>
+
+            <button class="md:hidden" onclick="toggleMobileMenu()" aria-label="Menu Mobile">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-gray-700">
+            <nav class="flex flex-col px-6 py-4 space-y-4 text-gray-300 font-semibold">
+            <a href="#features" class="hover:text-portal transition-colors">Recursos</a>
+            <a href="#how-it-works" class="hover:text-portal transition-colors">Como Funciona</a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
