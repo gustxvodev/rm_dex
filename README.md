@@ -35,7 +35,7 @@ Este projeto consome a [Rick and Morty API](https://rickandmortyapi.com/) para b
 - Home com busca e filtros
 - Cards com personagens e link para detalhes
 - Página individual com informações completas
-  ![Captura de tela 2025-06-08 112827](https://github.com/user-attachments/assets/b500947f-fcbc-40e6-9123-9cae24e70ea6)
+![Captura de tela 2025-06-08 112827](https://github.com/user-attachments/assets/b500947f-fcbc-40e6-9123-9cae24e70ea6)
 
 ## 📘 Licença
 
