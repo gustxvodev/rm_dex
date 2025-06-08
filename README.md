@@ -8,14 +8,14 @@
 - Filtros por status (Vivo, Morto, Desconhecido) e espécie (Humano, Alien)
 - Página individual com detalhes completos do personagem
 - Design responsivo, com paleta de cores temática inspirada na série
-- Interface desenvolvida com HTML, Tailwind CSS e JavaScript puro (Vanilla JS)
+- Interface desenvolvida com HTML, Tailwind CSS e JavaScript puro
 
 ## 💻 Tecnologias utilizadas
 
 - HTML5
-- Tailwind CSS (via CDN)
+- Tailwind CSS
 - JavaScript ES6+
-- Rick and Morty API (REST)
+- Rick and Morty API
 
 ## 🎨 Estilo
 
@@ -26,8 +26,6 @@
 ## ✅ Como executar o projeto
 
 
-> Não há dependências ou build — é um projeto 100% frontend com HTML, CSS e JS puros.
-
 ## 🌐 API
 
 Este projeto consome a [Rick and Morty API](https://rickandmortyapi.com/) para buscar dados em tempo real sobre os personagens da série.
@@ -37,6 +35,7 @@ Este projeto consome a [Rick and Morty API](https://rickandmortyapi.com/) para b
 - Home com busca e filtros
 - Cards com personagens e link para detalhes
 - Página individual com informações completas
+  ![Captura de tela 2025-06-08 112827](https://github.com/user-attachments/assets/b500947f-fcbc-40e6-9123-9cae24e70ea6)
 
 ## 📘 Licença
 
